@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./index.css";
+import Counter from "./pages/Counter";
+import TestError from "./pages/TestError";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorPage from "./pages/ErrorPage";
 
+function ErrorFallback({ error }) {
+  return (
+    <div role="alert">
+      <p>Something went wrong:</p>
+      <pre style={{ color: "red" }}>{error.message}</pre>
+    </div>
+  );
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ErrorBoundary FallbackComponent={ErrorFallback}>
+        <Routes>
+          <Route path="/" element={<Counter />} />
+          <Route path="/test-error" element={<TestError />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </ErrorBoundary>
     </div>
   );
 }

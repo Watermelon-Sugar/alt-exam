@@ -1,13 +1,90 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.counter_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #aec7cc;
+  border-radius: 30px;
+  width: 200px;
+  margin: auto;
+}
+
+.navlinks {
+  background-color: #060622;
+  padding: 20px;
+}
+.links {
+  text-decoration: none;
+  margin: 20px;
+  color: #aec7cc;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.increment {
+  border: none;
+  background-color: #aec7cc;
+  margin: 0 20px 0 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.decrement {
+  border: none;
+  background-color: #aec7cc;
+  margin: 0 20px 0 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.counter {
+  background-color: #060622;
+  color: #aec7cc;
+  padding: 25px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.btn button {
+  background-color: #aec7cc;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 15px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border: 3px solid #060622;
+}
+
+input {
+  border-radius: 15px;
+  border: 2px solid #060622;
+  width: 50px;
+  margin: 15px;
+  padding: 8px;
+  text-align: center;
 }
