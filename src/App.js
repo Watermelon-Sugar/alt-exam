@@ -8,9 +8,9 @@ import ErrorPage from "./pages/ErrorPage";
 
 function ErrorFallback({ error }) {
   return (
-    <div role="alert">
+    <div role="alert" className="alert">
       <p>Something went wrong:</p>
-      <pre style={{ color: "red" }}>{error.message}</pre>
+      <p style={{ color: "red" }} className="fallback">{error.message}</p>
     </div>
   );
 }
