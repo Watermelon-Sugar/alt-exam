@@ -11,6 +11,11 @@ const NavLinks = () => {
       <Link to="/test-error" className="links">
         Test Error
       </Link>
+
+      <Link to="/error-page" className="links">
+         Error Boundary
+      </Link>
+      
     </div>
   );
 };

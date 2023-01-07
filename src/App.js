@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import "./index.css";
 import Counter from "./pages/Counter";
 import TestError from "./pages/TestError";
@@ -15,9 +15,12 @@ function ErrorFallback({ error }) {
   );
 }
 function App() {
+  const navigate = useNavigate()
   return (
     <div className="App">
-      <ErrorBoundary FallbackComponent={ErrorFallback}>
+      <ErrorBoundary FallbackComponent={ErrorFallback} onReset={() => {
+        navigate('/')
+      }} >
         <Routes>
           <Route path="/" element={<Counter />} />
           <Route path="/test-error" element={<TestError />} />
