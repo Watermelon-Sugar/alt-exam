@@ -1,3 +1,15 @@
+Hosted link: http://alt-exam.vercel.app/
+
+Create a react counter app.
+Counter should include the following:
+1. A valid UI
+2. A custom hook with increment, decrement, reset and setValue functions
+3. Implement a combination of states with a useReducer with the four functions.
+4. Implement a page for the cutom hook, useReducer and 404 page.
+5. Set up a page to test error boundary.
+6. Implement proper SEO
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
