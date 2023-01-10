@@ -76,10 +76,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  border: 3px solid #060622;
-}
-
 input {
   border-radius: 15px;
   border: 2px solid #060622;
@@ -91,4 +87,47 @@ input {
 
 .alert {
   margin: auto;
+}
+
+@media (max-width: 426px) and (min-width: 300px) {
+  .links {
+    font-size: 1rem;
+    margin: 5px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .counter_main {
+    border-radius: 30px;
+    width: 125px;
+    margin-top: 10px;
+  }
+  .increment {
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+  }
+
+  .decrement {
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+  }
+
+  .counter {
+    padding: 13px;
+    border-radius: 18px;
+    font-size: 18px;
+  }
+
+  .btn button {
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 15px;
+  }
+  input {
+    border-radius: 15px;
+    width: 35px;
+    padding: 5px;
+  }
 }
